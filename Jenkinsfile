@@ -9,7 +9,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                    account = docker.build("weeeveralex/discovey:${env.BUILD_ID}", "-f Dockerfile .")
+                    account = docker.build("weeeveralex/discovery:${env.BUILD_ID}", "-f Dockerfile .")
                 }
             }
         }
