@@ -18,20 +18,18 @@ A arquitetura do projeto utiliza uma abordagem de microserviços, onde cada comp
 ## Estrutura do Projeto
 
 ```
-platform.race.discovery/
+discovery/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── discovery/
-│   │   │               ├── controller/
-│   │   │               ├── model/
-│   │   │               ├── repository/
-│   │   │               └── service/
+│   │      └── insper/
+│   │          └── store/
+│   │              └── discovery/
+│   │                  └── DiscoveryApplication/
 │   └── resources/
+├── .gitignore
+├── Dockerfile
 ├── Jenkinsfile
-├── docker-compose.yml
 ├── README.md
 └── pom.xml
 ```
